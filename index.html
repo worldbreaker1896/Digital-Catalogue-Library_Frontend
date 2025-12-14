@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header__container">
+    <div class="logo">
+      <span class="logo_details">
+        <img src="assets/acity_logo_hp.png" alt="School Logo" class="logo__image">
+        <div class="logo_text">A-City School Library</div>
+      </span>
+    </div>
+    <div class="header__actions">
+      <a href="login_register.html" class="login">Login</a>
+      <a href="login_register.html" class="register">Register</a>
+    </div>
+  </div>
+</header>
+
+<section class="search">
+  <div class="welcome_content">
+    <h1>Welcome to Our School Library</h1>
+    <p>Discover thousands of books, resources, and learning materials</p>
+    <div class="search-bar">
+      <input type="text" class="search-input" placeholder="Search for books, authors, or categories..." />
+      <button class="search-button">Search</button>
+    </div>
+  </div>
+</section>
+
+<section class="stats-cards">
+  <div class="card">
+    <div class="card__icon card__icon--blue">📘</div>
+    <div class="card__info">
+      <h4>Total Books</h4>
+      <p class="stat">5,247</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card__icon card__icon--green">📈</div>
+    <div class="card__info">
+      <h4>Books Borrowed</h4>
+      <p class="stat">1,834</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card__icon card__icon--orange">⏳</div>
+    <div class="card__info">
+      <h4>Available Now</h4>
+      <p class="stat">3,413</p>
+    </div>
+  </div>
+</section>
+
+<h2>Popular Books</h2>
+<div class="book-container"></div>
+
+<script src="scripts/books.js"></script>
+</body>
+</html>

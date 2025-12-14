@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile</title>
+  <link rel="stylesheet" href="styles/dbstyles.css">
+  <link rel="stylesheet" href="styles/profilestyles.css">
+</head>
+<body>
+
+<div class="sidebar">
+  <nav>
+    <h2 class="logo">Library Profile</h2>
+    <ul>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a class="active" href="profile.html">My Profile</a></li>
+      <li><a href="login_register.html">Logout</a></li>
+    </ul>
+  </nav>
+</div>
+
+<div class="main">
+  <div class="topbar">
+    <h1>My Profile</h1>
+    <div class="admin-profile-pic">
+      <img src="assets/user.png" alt="Profile Picture">
+    </div>
+  </div>
+
+  <div class="profile-card">
+    <form class="profile-form">
+      <input type="text" id="username" placeholder="Username">
+      <input type="email" id="email" placeholder="Email">
+      <input type="text" id="full_name" placeholder="Full Name">
+      <input type="url" id="avatar_url" placeholder="Avatar URL">
+      <textarea id="bio" placeholder="Bio"></textarea>
+
+      <p class="profile-message"></p>
+
+      <button type="submit">Save</button>
+      <button type="button" class="logout-btn">Logout</button>
+      <button type="button" class="delete-btn">Delete</button>
+    </form>
+  </div>
+</div>
+
+<script src="scripts/profile.js"></script>
+</body>
+</html>

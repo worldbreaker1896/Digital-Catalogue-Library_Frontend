@@ -1,0 +1,105 @@
+.profile-card {
+    background: #fff;
+    padding: 24px;
+    border-radius: 14px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    max-width: 800px;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px 24px;
+}
+
+.field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.field-group.full-width {
+    grid-column: 1 / -1;
+}
+
+.field-group label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #555;
+}
+
+.field-group input,
+.field-group textarea {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.field-group input:focus,
+.field-group textarea:focus {
+    border-color: #db492c;
+    box-shadow: 0 0 0 1px rgba(219, 73, 44, 0.2);
+}
+
+.profile-actions {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.primary-btn,
+.secondary-btn,
+.danger-btn {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.primary-btn {
+    background: #db492c;
+    color: #fff;
+}
+
+.primary-btn:hover {
+    background: #b13a22;
+}
+
+.secondary-btn {
+    background: #041343;
+    color: #fff;
+}
+
+.secondary-btn:hover {
+    background: #060f34;
+}
+
+.danger-btn {
+    background: #e63946;
+    color: #fff;
+}
+
+.danger-btn:hover {
+    background: #b72833;
+}
+
+.profile-message {
+    margin-top: 12px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .profile-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
